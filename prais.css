@@ -1,0 +1,165 @@
+main {
+  width: auto;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  padding-bottom:50px;
+  color: black;
+        background-image:
+        radial-gradient(circle at 100% 150%, #A69F60 40%, transparent 40%, transparent),
+        radial-gradient(circle at 0 150%,#A69F60  40%, transparent 40%, transparent),
+        radial-gradient(circle at 50% 100%, lightblue 71%, transparent 71%,   transparent),
+        radial-gradient(circle at 100% 50%,#A69F60  49%, transparent 50%,  transparent),
+        radial-gradient(circle at 0 50%,#A69F60  49%, transparent 50%, transparent);
+        background-repeat: repeat;
+        background-size: 400px 200px;}
+
+        .page-header {
+          position: fixed;
+          top:0px;
+          left:0px;
+          right:0px;
+          display:grid;
+          grid-template-columns: auto auto auto auto;
+          grid-template-rows:auto;
+          text-align:center;
+          padding-top:20px;
+          padding-bottom:20px;
+          padding-left:150px;
+          background-image: url(img/cesua2.jpg);
+          background-size:800px;
+          box-shadow: 0 0 5px 0 #333333;
+        z-index:5;}
+
+        .nav1{
+        grid-column-start:1;}
+        .nav2{
+        grid-column-start:2;}
+        .nav3{
+        grid-column-start:3;}
+        .nav4{
+        grid-column-start:4;}
+
+        .page-header a {
+          color: gold;
+          font-weight:900;
+          font-size:35px;}
+
+        a:focus {
+          color:red;}
+
+          .logo {
+            width:100px;
+            height:100px;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            margin: 0;
+            border:8px solid gold;
+              border-radius: 50%;}
+.table_prais {
+  padding:100px;
+}
+
+table {
+  margin: 100px;
+  font-size:35px;
+  border: 13px solid black;
+}
+
+td,
+th {
+width:350px;
+height:100px;
+text-align: center;
+vertical-align: middle;
+line-height: 30px;
+border: 3px solid black;
+}
+
+.cena:hover {    /* цена краснеет когда наводишь*/
+  color:red;
+}
+
+.podpisi {                      /*страны под типами драконов*/
+  display:none;
+position:absolute;
+  font-size: 20px;
+  font-style:italic;
+  font-weight:900;
+  text-decoration:underline;
+  vertical-align:bottom;
+  }
+
+.gold_table:hover .podpisi{                     /*появляются при наведении*/
+display:block;
+top:390px;
+left:360px;
+color:gold}
+.gold_table:hover{                                 /*появляюся флаги стран*/
+background:url(files/flag_Egipet.jpg) no-repeat;
+background-size:360px 110px;}
+
+.blue_table:hover .podpisi{
+display:block;
+top:495px;
+left:350px;
+color:blue;}
+.blue_table:hover{
+background:url(files/flag_Ruminia.jpg) no-repeat;
+background-size:360px 110px;}
+
+.red_table:hover .podpisi{
+display:block;
+top:605px;
+left:360px;
+color:red;}
+.red_table:hover {
+background:url(files/flag_Czech.jpg) no-repeat;
+background-size:360px 110px;}
+
+.green_table:hover .podpisi{
+display:block;
+top:715px;
+left:350px;
+color:green;}
+.green_table:hover {
+background:url(files/flag_Canada.jpg) no-repeat;
+background-size:360px 110px;}
+
+.black_table:hover .podpisi{
+display:block;
+top:825px;
+left:360px;
+color:black;}
+.black_table:hover {
+background:url(files/flag_Russia.jpg) no-repeat;
+background-size:360px 110px;}
+
+.grey_table:hover .podpisi{
+display:block;
+top:935px;
+left:350px;
+color:grey;}
+.grey_table:hover {
+background:url(files/flag_Horvatia.jpg) no-repeat;
+background-size:360px 110px;}
+
+.podpisi:hover{
+transform:scale(1.5);
+color:lightgreen !important;
+text-decoration:none;
+}
+.nazvanie:hover{
+transform:scale(2.5);
+color:black !important;
+}
+
+footer {
+  background:linear-gradient(180deg, white, grey);
+    height: 100px;
+    font-size:20px;
+    padding:20px;
+}
+.footer {
+  color:red;
+}

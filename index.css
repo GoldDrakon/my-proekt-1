@@ -1,0 +1,177 @@
+body {
+  width: auto;
+  height:auto;
+background-image:
+        radial-gradient(circle at 100% 150%, #A69F60 40%, transparent 40%, transparent),
+        radial-gradient(circle at 0 150%,#A69F60  40%, transparent 40%, transparent),
+        radial-gradient(circle at 50% 100%, lightblue 71%, transparent 71%,   transparent),
+        radial-gradient(circle at 100% 50%,#A69F60  49%, transparent 50%,  transparent),
+        radial-gradient(circle at 0 50%,#A69F60  49%, transparent 50%, transparent);
+        background-repeat: repeat;
+        background-size: 400px 200px;
+}
+
+
+footer {
+  background:linear-gradient(180deg, white, grey);
+            width: auto;
+            height:auto;
+              font-size:20px;
+              padding:20px;
+          }
+.footer {
+        color:red;
+          }
+
+main {
+  width: auto;
+  height:auto;
+  font-family: "Arial", sans-serif;
+
+      }
+
+  .page-header {
+          position: fixed;
+          top:0px;
+          left:0px;
+          right:0px;
+          display:grid;
+          grid-template-columns: auto auto auto auto;
+          grid-template-rows:auto;
+          text-align:center;
+          padding-top:20px;
+          padding-bottom:20px;
+          padding-left:150px;
+          background-image: url(img/cesua2.jpg);
+          background-size:800px;
+          box-shadow: 0 0 5px 0 #333333;
+        z-index:5;}
+  .nav1{
+        grid-column-start:1;}
+  .nav2{
+        grid-column-start:2;}
+  .nav3{
+        grid-column-start:3;}
+  .nav4{
+        grid-column-start:4;}
+
+  .page-header a {
+          color: gold;
+          font-weight:900;
+          font-size:35px;}
+
+
+
+
+
+a:focus {
+  color:red;
+}
+
+a {
+  color:green;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 900;
+  color: red;
+  text-align: center;
+  text-decoration: underline;
+padding-top:100px;}
+
+.dracon {
+  width: 900px;
+  padding: 20px;
+  color: blue;
+  font-weight: 800;
+  text-align: center;
+  margin:50px auto;
+  font-size: 30px;
+}
+
+
+div {
+  text-align: center;
+}
+
+img:not(.logo) {
+  width:500px;
+  height:400px;
+border:8px solid gold;
+  border-radius: 50%;
+  transform:scale(1); /*1-100%*/
+  transition: 2s all; /*плавное изменение*/
+  }
+
+img:hover:not(.logo){
+    transform: scale(1.2); }
+
+.logo {
+      width:100px;
+      height:100px;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      margin: 0;
+      border:8px solid gold;
+      border-radius: 50%;}
+
+.asidede {
+  width: 1000px;
+  padding: 20px;
+  font-weight: 900;
+  text-align: center;
+  margin:100px auto 50px;
+  font-size: 35px;
+  color: green;
+  border: 8px solid green;
+  border-radius: 40px;
+}
+.gold {
+  border-color: gold;
+  color: gold;
+  font-size: 30px;
+
+}
+.table_img .blue {
+  border-color: blue;
+  color: blue;
+  font-size: 30px;}
+
+.table_img .red {
+    border-color: red;
+    color:red;
+    font-size: 30px;
+
+  }
+.table_img .green {
+  border-color: green;
+  color:green;
+  font-size: 30px;
+
+}
+.table_img .black {
+  border-color: black;
+  color:black;
+  font-size: 30px;
+
+}
+.table_img .silver {
+  border-color: grey;
+  color:grey;
+  font-size: 30px;
+
+}
+td {
+    padding:  20px;
+  text-align: center;
+vertical-align: middle;
+}
+
+table {
+width: 1800px;
+border-color:  transparent; /*прозрачный цвет рамки*/
+border-collapse:collapse;
+margin:0 auto;
+}

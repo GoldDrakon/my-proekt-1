@@ -1,0 +1,261 @@
+main {
+  width:auto;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: black;
+  padding-bottom:50px;
+  margin-top:-50px;
+        background-image:
+        radial-gradient(circle at 100% 150%, #A69F60 40%, transparent 40%, transparent),
+        radial-gradient(circle at 0 150%,#A69F60  40%, transparent 40%, transparent),
+        radial-gradient(circle at 50% 100%, lightblue 71%, transparent 71%,   transparent),
+        radial-gradient(circle at 100% 50%,#A69F60  49%, transparent 50%,  transparent),
+        radial-gradient(circle at 0 50%,#A69F60  49%, transparent 50%, transparent);
+        background-repeat: repeat;
+        background-size: 400px 200px;}
+
+.page-header {
+  position: fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows:auto;
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:150px;
+  background-image: url(img/cesua2.jpg);
+  background-size:800px;
+  box-shadow: 0 0 5px 0 #333333;
+z-index:5;}
+
+.nav1{
+grid-column-start:1;}
+.nav2{
+grid-column-start:2;}
+.nav3{
+grid-column-start:3;}
+.nav4{
+grid-column-start:4;}
+
+.page-header a {
+  color: gold;
+  font-weight:900;
+  font-size:35px;}
+
+a:focus {
+  color:red;
+}
+
+.logo {
+  width:100px;
+  height:100px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  margin: 0;
+  border:8px solid gold;
+    border-radius: 50%;}
+
+/* ОСНОВНАЯ ЧАСТЬ*/
+
+.spisok_dracon{                      /*навигация среди драконов*/
+  display:grid;
+  position: fixed;
+  top:0px;
+  left:0px;
+  right:0px;
+  padding-top:85px;
+  padding-left:150px;
+  height:30px;
+  background-color:#CE8888;
+  text-align:center;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows:auto;
+  font-size:25px;}
+.spisok1 {
+  grid-column-start:1;}
+.spisok2 {
+  grid-column-start:2;}
+.spisok3 {
+  grid-column-start:3;}
+.spisok4 {
+  grid-column-start:4;}
+.spisok5 {
+  grid-column-start:5;}
+.spisok6 {
+  grid-column-start:6;}
+
+
+
+
+p:not(.footer){
+    text-align:justify;
+    font-size:25px;
+    line-height: 35px;
+}
+pre {
+font-size: 30px;
+color:red;
+}
+
+
+
+h2 {
+  text-align:center;
+    font-size:80px;
+    font-family: gotic;
+}
+@font-face {
+  font-family:"gotic" ;
+  src:local("gotic"),url(source/16897.woff) format("woff");
+}
+
+.opisanie {
+  margin: 50px 50px 50px 130px;
+  padding-top:150px;
+    line-height: 20px;
+}
+
+.gold_dracon {
+  color: gold;
+}
+
+.blue_dracon {
+  color: blue;
+}
+
+.red_dracon {
+  color: red;
+}
+
+.green_dracon {
+  color: green;
+}
+
+.black_dracon {
+  color: black;
+}
+
+.silver_dracon {
+  color: grey;
+}
+
+.kartinki img{
+width:700px;
+}
+
+.kartinki {
+  text-align:center;
+}
+.opisanie_drakoni::first-letter {
+  font-size: 80px;
+  font-weight:700;
+  font-style:italic;
+  font-family: gotic;}
+
+.gold_dracon_1::first-letter {
+  color:gold;
+}
+.blue_dracon_1::first-letter {
+  color:blue;
+}
+
+.red_dracon_1::first-letter {
+  color:red;
+}
+
+.green_dracon_1::first-letter {
+  color:green;
+}
+
+.black_dracon_1::first-letter {
+  color:black;
+}
+
+.silver_dracon_1::first-letter {
+  color:grey;
+}
+
+footer{
+  background:linear-gradient(180deg, white, grey);
+    height: 100px;
+    font-size:20px;
+    padding:20px;
+}
+.footer {
+  color:red;}
+
+table {
+margin-left:auto;
+margin-right:auto;
+font-size:50px;
+line-height:40px;
+border-spacing:40px;
+width:auto; }
+
+td {
+  text-align:center;
+  height:50px;
+  font-family: gotic;}
+.table_opisanie {
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+.cena_opisanie1 {
+color:red;
+font-size:35px;
+font-weight:700;
+border:3px dashed red;
+border-radius:50px;
+width:300px;
+height:40px;
+padding-top:20px;
+text-align:center;
+opacity: 1;
+position:relative;}
+.cena_opisanie13{
+opacity: 0;
+position:relative;
+top:-20px;}
+.cena_opisanie1:hover .cena_opisanie12{
+transform:scale(5);
+transition:2s;
+opacity: 0;}
+.cena_opisanie1:hover .cena_opisanie13{
+opacity: 1;}
+
+.opisanie a {
+  text-decoration:none;}
+      /*Лайки*/
+.heart {
+margin-left: 20px;
+margin-top: 10px;
+background-image:url(heart.png);
+  background-size:30px 30px;
+  background-repeat:no-repeat;
+  background-color:transparent;
+  border:none;
+  outline: none;}
+
+.likes-number {
+  margin-left: 50px;
+  width:auto;
+  background-color:transparent;
+  font-size:30px;
+  border:none;}
+
+.heart_color {
+  position:absolute;
+  top:830px;
+  left:1350px;
+  width:130px;
+  height:50px;
+  border:3px solid gold;
+  border-radius:30px;}
+
+.active1 {
+  background-color: gold;}

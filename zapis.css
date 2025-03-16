@@ -1,0 +1,241 @@
+main {
+  width: auto;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: black;
+  padding-bottom:150px;
+        background-image:
+        radial-gradient(circle at 100% 150%, #A69F60 40%, transparent 40%, transparent),
+        radial-gradient(circle at 0 150%,#A69F60  40%, transparent 40%, transparent),
+        radial-gradient(circle at 50% 100%, lightblue 71%, transparent 71%,   transparent),
+        radial-gradient(circle at 100% 50%,#A69F60  49%, transparent 50%,  transparent),
+        radial-gradient(circle at 0 50%,#A69F60  49%, transparent 50%, transparent);
+        background-repeat: repeat;
+        background-size: 400px 200px;}
+
+        .page-header {
+          position: fixed;
+          top:0px;
+          left:0px;
+          right:0px;
+          display:grid;
+          grid-template-columns: auto auto auto auto;
+          grid-template-rows:auto;
+          text-align:center;
+          padding-top:20px;
+          padding-bottom:20px;
+          padding-left:150px;
+          background-image: url(img/cesua2.jpg);
+          background-size:800px;
+          box-shadow: 0 0 5px 0 #333333;
+        z-index:5;}
+
+        .nav1{
+        grid-column-start:1;}
+        .nav2{
+        grid-column-start:2;}
+        .nav3{
+        grid-column-start:3;}
+        .nav4{
+        grid-column-start:4;}
+
+        .page-header a {
+          color: gold;
+          font-weight:900;
+          font-size:35px;}
+
+        a:focus {
+          color:red;}
+
+          .logo {
+            width:100px;
+            height:100px;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            margin: 0;
+            border:8px solid gold;
+              border-radius: 50%;}
+
+/*НАЧАЛО ОСНОВНОЙ ЧАСТИ MAIN*/
+
+.spisok_input {
+  display:grid;
+  padding-left:160px;
+  padding-top:200px;
+  grid-template-columns: auto auto ;
+  grid-template-rows:500px 500px;
+  font-size:25px;}
+.spisok1 {
+  grid-column-start:1;
+  grid-row-start:1;}
+.spisok2 {
+  grid-column-start:2;
+  grid-row-start:1;}
+.spisok3 {
+  grid-column-start:1;
+  grid-row-start:2;}
+.spisok4 {
+  grid-column-start:2;
+  grid-row-start:2;}
+
+     /*Ваши данные*/
+.input_dannie1 {
+  width:150px;
+  margin-left:10px;
+margin-bottom:10px;}
+.input_dannie2 {
+  width:150px;
+  margin-left:60px;
+margin-bottom:10px;}
+.input_dannie3 {
+  width:150px;
+  margin-left:15px;
+margin-bottom:10px;}
+.input_dannie4 {
+  width:150px;
+  margin-left:80px;
+margin-bottom:10px;}
+.input_dannie5 {
+  width:150px;
+  margin-left:72px;}
+
+ /*Данные заказа*/
+.input2_dannie1 {
+width:150px;
+margin-left:30px;
+margin-bottom:25px;}
+.input2_dannie2 {
+width:150px;
+margin-left:20px;
+margin-bottom:25px;}
+.input2_dannie3 {
+margin-left:10px;}
+.input2_dannie4 {
+position:absolute;
+top:410px;
+left:1250px;}
+
+  /*Данные о доставке*/
+.input3_dannie1 {
+  width:150px;
+  margin-left:10px;
+  margin-bottom:10px;}
+.input3_dannie2 {
+  width:150px;
+  margin-left:80px;
+  margin-bottom:10px;}
+.input3_dannie3 {
+  width:150px;
+  margin-left:115px;
+  margin-bottom:10px;}
+.input3_dannie4 {
+  margin-left:0px;
+  margin-bottom:20px;}
+.input3_dannie5 {
+  margin-left:0px;}
+
+/*кнопки сброса в формах*/
+.reset {
+  position:absolute;
+  width:250px;
+  height:40px;
+  border:3px solid blue;
+  background-color:grey;
+  border-radius:20px;
+  font-size:20px;
+  font-weight:700;
+  outline: none;}
+.reset1 {
+  top:500px;
+  left:370px;}
+.reset2 {
+  top:500px;
+  left:1220px;}
+.reset3 {
+  top:1000px;
+  left:370px;}
+
+
+output {
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  border: 2px solid black;
+border-radius: 5px;
+ margin: 0px 0px 0px 50px;
+ padding: 2px 5px;
+ vertical-align: middle;}
+
+fieldset {
+width:600px;
+height:300px;
+    padding: 30px;
+    border: 3px solid #34495e;
+    border-radius: 5px;
+    background-color:#9FFCFC;
+}
+
+label {
+  margin-top: 50px;
+  margin-left:120px;
+  font-size:20px;
+}
+
+legend {
+  font-weight:900;
+  text-align:center;
+}
+select {
+  font-size:15px;
+}
+
+.reset_all,
+.button_buy {
+  color: #ffffff;
+  border: 5px solid blue;
+  border-radius: 5px;}
+
+.button_buy  {
+  position:absolute;
+  top:800px;
+  left:1020px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+@keyframes button_buy_color {
+  100% {filter:hue-rotate(360deg)}}
+.button_buy {
+background-color:green;
+  animation: button_buy_color 2s linear infinite;
+}
+.reset_all {
+  position:absolute;
+  top:720px;
+  left:1020px;
+  width: 200px;
+  height: 40px;
+  background-color: #2c3e50;
+  outline: none;}
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  border-color:red;
+color:red;}
+.button_buy:focus {
+  opacity:0;
+  outline: none;
+}
+
+footer {
+  background:linear-gradient(180deg, white, grey);
+    height: 100px;
+    font-size:20px;
+    padding:20px;
+}
+.footer {
+  color:red;
+}
